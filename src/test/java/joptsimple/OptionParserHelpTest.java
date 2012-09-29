@@ -31,6 +31,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import static java.lang.System.*;
@@ -62,6 +63,7 @@ public class OptionParserHelpTest extends AbstractOptionParserFixture {
 
     @Before
     public final void createSink() {
+        Locale.setDefault( Locale.US );
         sink = new StringWriter();
     }
 
